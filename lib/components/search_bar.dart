@@ -13,6 +13,7 @@ Widget buildSearchBar() {
           textAlign: TextAlign.start,
           textCapitalization: TextCapitalization.words,
           decoration: InputDecoration(
+            contentPadding: EdgeInsets.all(8),
             hintText: 'Find a user',
             prefixIcon: Icon(Icons.search),
             border: OutlineInputBorder(

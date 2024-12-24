@@ -16,7 +16,10 @@ class UserListScreen extends StatelessWidget {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text('Json Users', style: TextStyle(fontWeight: FontWeight.bold),),
+                const Text(
+                  'Json Users',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
                 SizedBox(height: 6),
                 Text(
                   provider.users.length > 1
@@ -25,8 +28,7 @@ class UserListScreen extends StatelessWidget {
                   style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic),
                 ),
                 Padding(
-                  padding:
-                      const EdgeInsets.only(bottom: 6), // Adds bottom padding
+                  padding: const EdgeInsets.only(bottom: 6),
                 ),
               ],
             );
@@ -54,7 +56,9 @@ class UserListScreen extends StatelessWidget {
               child: Column(
                 children: [
                   CircularProgressIndicator(),
-                  SizedBox(height: 10,),
+                  SizedBox(
+                    height: 10,
+                  ),
                   Text('Fetching users'),
                 ],
               ),
@@ -106,14 +110,14 @@ class UserListScreen extends StatelessWidget {
           return Card(
             margin: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
             child: ListTile(
-                leading: ClipOval(
-                  child: Image.network(
-                    'https://placebear.com/g/400/400',
-                    width: 50,
-                    height: 50,
-                    fit: BoxFit.cover,
-                  ),
+              leading: ClipOval(
+                child: Image.network(
+                  'https://placebear.com/g/400/400',
+                  width: 50,
+                  height: 50,
+                  fit: BoxFit.cover,
                 ),
+              ),
               //leading: Icon(Icons.person),
               title: Text(user.name),
               subtitle: Text(user.email),
