@@ -1,5 +1,14 @@
 # Flutter Developer Task - HealTether Healthcare Pvt Ltd
 
+## Table of contents
+
+- [Task Overview](#Task-Overview)
+- [API Details](#API-Details)
+- [Task Requirements](#Task-Requirements)
+- [Submission Summary](#Submission-Summary)
+- [Packages Used](#Packages-Used)
+- [Demo](#Demo)
+
 ## Task Overview:
 
 Build a simple Flutter app that fetches data from an API and displays it in a list.
@@ -9,13 +18,13 @@ You are required to:
 - Implement basic state management using Provider or Riverpod.
 - Handle loading and error states appropriately.
 
-## API Details:
+### API Details:
 
 For this task, we will use the following free API that returns a list of users:
 
-#### API URL: https://jsonplaceholder.typicode.com/users
+API URL: `https://jsonplaceholder.typicode.com/users`
 
-## Task Requirements:
+### Task Requirements:
 
 ### UI Design:
 
@@ -42,9 +51,16 @@ Bonus (Optional):
 - Implement a simple search functionality that filters the list of users based on the name.
 
 ## Submission Summary
+- This project makes use of the JsonPlaceHolder API to fetch a list of users and display a place holder image as well as the user name and user email.
+- I made use of the HTTP package for the network call
+- I made use of the Provider package for state management.
 
-This project makes use of the JsonPlaceHolder API to fetch a list of users and display a place holder image as well as the user name and user email.
+### Packages Used
+- [provider](https://pub.dev/packages/provider): For managing states across the app.
+- [http](https://pub.dev/packages/http): To make network calls.
 
-I made use of the HTTP package for the network call
+### Demo
 
-I made use of the Provider package for state management.
+#### iOS Demo
+https://github.com/user-attachments/assets/328bb864-9769-474c-934d-35cb93fbb3a9
+
