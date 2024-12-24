@@ -52,8 +52,10 @@ Bonus (Optional):
 
 ## Submission Summary
 - This project makes use of the JsonPlaceHolder API to fetch a list of users and display a place holder image as well as the user name and user email.
-- I made use of the HTTP package for the network call
+- I made use of the HTTP package for the network call.
 - I made use of the Provider package for state management.
+- I made use of the RefreshIndicator class for the swipe to refresh bonus feature.
+- I implemented the search functionality.
 
 ### Packages Used
 - [provider](https://pub.dev/packages/provider): For managing states across the app.
